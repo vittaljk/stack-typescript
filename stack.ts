@@ -1,4 +1,10 @@
-export class Stack {
+interface IStack<T> {
+    push(item: T);
+    pop();
+    peek();
+}
+
+class Stack<T> implements IStack<T> {
     private items: Array<any>;
 
     getItems(): Array<any> {
