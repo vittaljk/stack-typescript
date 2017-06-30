@@ -29,9 +29,3 @@ export class Stack {
         return this.items[this.items.length - 1];
     }
 }
-
-let st = new Stack();
-st.setItems(['(']);
-// st.pop()
-st.isEmpty();
-console.log(st.isEmpty());
